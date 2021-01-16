@@ -33,14 +33,15 @@ const CheckoutForm = (props) => {
     <div className="checkout">
       <form onSubmit={handleSubmit}>
         <h2>Checkout Form</h2>
-        <label >
+        <label htmlFor="firstName">
           First Name:
-          </label>
           <input
+            id="firstName"
             name="firstName"
             value={values.firstName}
             onChange={handleChanges}
-          />
+            />
+            </label>
         <label>
           Last Name:
           <input
